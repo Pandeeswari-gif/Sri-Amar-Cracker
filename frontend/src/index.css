@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0c0511;
+    color: #f3f4f6;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom festive scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0714;
+}
+::-webkit-scrollbar-thumb {
+  background: #d97706;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
+
+/* Festive Golden Shimmer & Glows */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.festive-card {
+  background: rgba(30, 14, 46, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(245, 158, 11, 0.18);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.festive-card:hover {
+  border-color: rgba(245, 158, 11, 0.45);
+  box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.15);
+}
+
+.festive-btn-primary {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: #11071d;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+
+.festive-btn-primary:hover {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.5);
+  transform: translateY(-1px);
+}
+
+.festive-btn-red {
+  background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.festive-btn-red:hover {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  box-shadow: 0 0 15px rgba(220, 38, 38, 0.4);
+}

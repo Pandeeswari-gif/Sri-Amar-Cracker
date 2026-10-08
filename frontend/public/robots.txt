@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /account/orders
+
+Sitemap: https://sri-amar-crackers.vercel.app/sitemap.xml
